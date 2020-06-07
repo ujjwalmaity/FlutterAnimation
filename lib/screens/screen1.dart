@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutteranimation/animations/animation1.dart';
 import 'package:flutteranimation/utils/constance.dart';
 
 class Screen1 extends StatelessWidget {
@@ -12,7 +13,7 @@ class Screen1 extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Text('Hello World!'),
+        child: Animation1(child: Text('Hello World!')),
       ),
     );
   }
