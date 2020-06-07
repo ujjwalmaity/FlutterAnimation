@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutteranimation/animations/animation2.dart';
 import 'package:flutteranimation/utils/constance.dart';
 
 class Screen2 extends StatelessWidget {
@@ -12,10 +13,12 @@ class Screen2 extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Container(
-          width: 50.0,
-          height: 50.0,
-          color: Colors.deepOrange,
+        child: Animation2(
+          child: Container(
+            width: 50.0,
+            height: 50.0,
+            color: Colors.deepOrange,
+          ),
         ),
       ),
     );
